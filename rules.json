@@ -1,0 +1,179 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "resourceTypes": [
+                "image"
+            ],
+            "excludedRequestDomains": [
+                "google.com",
+                "gstatic.com",
+                "hcaptcha.com",
+                "recaptcha.net"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "resourceTypes": [
+                "media",
+                "object"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "resourceTypes": [
+                "font"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "regexFilter": "analytics|tracker|adservice|doubleclick|googlesyndication|googletagmanager|hotjar|mixpanel|segment|amplitude|heap|fullstory|mouseflow|luckyorange|crazyegg",
+            "resourceTypes": [
+                "script",
+                "xmlhttprequest",
+                "image",
+                "sub_frame",
+                "ping"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "regexFilter": "facebook\\.com|facebook\\.net|twitter\\.com|linkedin\\.com|pinterest\\.com|instagram\\.com|tiktok\\.com",
+            "resourceTypes": [
+                "script",
+                "sub_frame",
+                "image",
+                "stylesheet"
+            ]
+        }
+    },
+    {
+        "id": 6,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "ads",
+            "resourceTypes": [
+                "sub_frame",
+                "script",
+                "image"
+            ]
+        }
+    },
+    {
+        "id": 7,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "regexFilter": "cdn\\.jsdelivr\\.net|cdnjs\\.cloudflare\\.com|unpkg\\.com|stackpath\\.bootstrapcdn\\.com|maxcdn\\.bootstrapcdn\\.com",
+            "resourceTypes": [
+                "stylesheet",
+                "font"
+            ]
+        }
+    },
+    {
+        "id": 8,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "regexFilter": "player\\.|video\\.|stream\\.|embed\\.|youtube\\.com\\/embed|vimeo\\.com\\/video",
+            "resourceTypes": [
+                "sub_frame",
+                "media",
+                "object"
+            ]
+        }
+    },
+    {
+        "id": 9,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "regexFilter": "widget|chat|intercom|drift|crisp|tawk|zendesk|freshdesk|olark|livechat",
+            "resourceTypes": [
+                "script",
+                "sub_frame"
+            ]
+        }
+    },
+    {
+        "id": 10,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "regexFilter": "cookie|consent|gdpr|privacy|popup|banner|modal|overlay|subscribe|newsletter",
+            "resourceTypes": [
+                "script"
+            ]
+        }
+    },
+    {
+        "id": 100,
+        "priority": 10,
+        "action": {
+            "type": "allow"
+        },
+        "condition": {
+            "regexFilter": "captcha|recaptcha|hcaptcha|challenge|turnstile",
+            "resourceTypes": [
+                "image",
+                "script",
+                "sub_frame",
+                "xmlhttprequest"
+            ]
+        }
+    },
+    {
+        "id": 101,
+        "priority": 10,
+        "action": {
+            "type": "allow"
+        },
+        "condition": {
+            "regexFilter": "login|signin|auth|oauth|session|token",
+            "resourceTypes": [
+                "script",
+                "xmlhttprequest"
+            ]
+        }
+    }
+]

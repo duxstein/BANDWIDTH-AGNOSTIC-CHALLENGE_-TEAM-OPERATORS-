@@ -1,0 +1,29 @@
+{
+    "name": "DataLite Portal",
+    "short_name": "DataLite",
+    "description": "Lightweight university portal access with offline support",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "theme_color": "#1a1a2e",
+    "background_color": "#0d0d1a",
+    "scope": "/",
+    "lang": "en",
+    "categories": [
+        "education",
+        "utilities"
+    ],
+    "icons": [],
+    "shortcuts": [
+        {
+            "name": "Check Attendance",
+            "short_name": "Attendance",
+            "url": "/?action=attendance"
+        },
+        {
+            "name": "View Results",
+            "short_name": "Results",
+            "url": "/?action=results"
+        }
+    ]
+}

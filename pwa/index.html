@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="description" content="DataLite Portal - Lightweight University Portal Access">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="DataLite">
+
+    <title>DataLite Portal</title>
+
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Offline Banner -->
+    <div id="offline-banner" class="offline-banner hidden">
+        📡 Offline Mode - Showing cached content
+    </div>
+
+    <!-- App Shell -->
+    <header class="app-header">
+        <div class="header-content">
+            <span class="logo">⚡</span>
+            <h1>DataLite Portal</h1>
+            <button id="install-btn" class="install-btn hidden" aria-label="Install App">
+                <span>📲</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main id="content" class="content">
+        <!-- Skeleton Loader -->
+        <div id="skeleton" class="skeleton-container">
+            <div class="skeleton-header"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line short"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line medium"></div>
+            <div class="skeleton-block"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line short"></div>
+        </div>
+
+        <!-- Dynamic Content Inserted Here -->
+        <div id="portal-content" class="portal-content hidden"></div>
+    </main>
+
+    <!-- Status Bar -->
+    <footer class="status-bar">
+        <span id="status-text">Ready</span>
+        <span id="savings-badge" class="savings-badge">--% saved</span>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
